@@ -1,17 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html >
+
 <head>
-	<title>{{if .Title}}{{.Title}}-{{end}}Go templates extends!</title>
-<link rel="stylesheet" type="text/css" href="/css/semantic.min.css"> 
-<link rel="stylesheet" type="text/css" href="/css/dropdown.min.css">
-<link rel="stylesheet" type="text/css" href="/css/site.min.css">
-<link rel="stylesheet" type="text/css" href="/css/menu.min.css">
-<script src="/js/jquery-2.1.3.min.js"></script>
-<script src="/js/dropdown.min.js"></script>
-<script src="/js/fn.js"></script>
+  <meta charset="UTF-8">
+  <title>Sample Semantic UI</title>
+  
+  
+  
+<link rel='stylesheet prefetch' href='/css/dropdown.min.css'>
+<link rel='stylesheet prefetch' href='/css/transition.min.css'>
+<link rel='stylesheet prefetch' href='/css/site.min.css'>
+<link rel='stylesheet prefetch' href='/css/label.min.css'>
+<link rel='stylesheet prefetch' href='/css/input.min.css'>
+<link rel='stylesheet prefetch' href='/css/container.min.css'>
+<link rel='stylesheet prefetch' href='/css/form.min.css'>
+<link rel='stylesheet prefetch' href='/css/button.min.css'>
+<link rel='stylesheet prefetch' href='/css/reset.min.css'>
+<link rel='stylesheet prefetch' href='/css/segment.min.css'>
+<link rel='stylesheet prefetch' href='/css/grid.min.css'>
+<link rel='stylesheet prefetch' href='/css/breadcrumb.min.css'>
+<link rel='stylesheet prefetch' href='/css/item.min.css'>
+<link rel='stylesheet prefetch' href='/css/menu.min.css'>
+<link rel='stylesheet prefetch' href='/css/list.min.css'>
+<link rel='stylesheet prefetch' href='/css/input.min.css'>
+<link rel='stylesheet prefetch' href='/css/sidebar.min.css'>
+<link rel='stylesheet prefetch' href='/css/icon.min.css'>
+<link rel='stylesheet prefetch' href='/css/divider.min.css'>
+<link rel="stylesheet" href="/css/font-awesome.min.css">  
+      <style>
+      .hidden.menu {
+   display: none;
+}
+
+.masthead.segment {
+   min-height: 100px;
+   padding: .25em 0em;
+}
+
+.masthead .logo.item img {
+   margin-right: 1em;
+}
+
+.masthead .ui.menu .ui.button {
+   margin-left: 0.5em;
+}
+
+.masthead h1.ui.header {
+   margin-top: .35em;
+   margin-bottom: .55em;
+   font-size: 3em;
+   font-weight: normal;
+}
+
+.masthead h2 {
+   font-size: 1.5em;
+   font-weight: normal;
+}
+
+.ui.vertical.stripe {
+   padding: 8em 0em;
+}
+
+.ui.vertical.stripe h3 {
+   font-size: 2em;
+}
+
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+   margin-top: 3em;
+}
+
+.ui.vertical.stripe .floated.image {
+   clear: both;
+}
+
+.ui.vertical.stripe p {
+   font-size: 1.33em;
+}
+
+.ui.vertical.stripe .horizontal.divider {
+   margin: 3em 0em;
+}
+
+.quote.stripe.segment {
+   padding: 0em;
+}
+
+.quote.stripe.segment .grid .column {
+   padding-top: 5em;
+   padding-bottom: 5em;
+}
+
+.footer.segment {
+   padding: 5em 0em;
+}
+
+.secondary.pointing.menu .toc.item {
+   display: none;
+}
+
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 70px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+      text-align: center;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: auto;
+        font-size: 1.5em;
+      }
+    }
+
+.item--white {color: white !important;}
+    </style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
 </head>
-<body>
-<!-- Following Menu -->
+
+<body translate="no" >
+
+  <!-- Following Menu -->
 <div class="ui large top fixed hidden menu">
   <div class="ui container">
   <a class="active item">Home</a>
@@ -77,8 +209,8 @@
      <a class="section">Home</a>
      <i class="right angle icon divider"></i>
      <a class="section">Store</a>
-     <i class="right angle icon divider"></i>
-     <div class="active section">T-Shirt</div>
+     <i class=" faright angle icon divider"></i>
+     <div class="active section">TT-Shirt</div>
    </div>
 </div>
  <div class="ui hidden divider"></div>  
@@ -484,27 +616,21 @@
       <div class="default text">Saved Contacts</div>
       <div class="menu">
         <div class="item" data-value="jenny" data-text="Jenny">
-          <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
           Jenny Hess
         </div>
         <div class="item" data-value="elliot" data-text="Elliot">
-          <img class="ui mini avatar image" src="/images/avatar/small/elliot.jpg">
           Elliot Fu
         </div>
         <div class="item" data-value="stevie" data-text="Stevie">
-          <img class="ui mini avatar image" src="/images/avatar/small/stevie.jpg">
           Stevie Feliciano
         </div>
         <div class="item" data-value="christian" data-text="Christian">
-          <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg">
           Christian
         </div>
         <div class="item" data-value="matt" data-text="Matt">
-          <img class="ui mini avatar image" src="/images/avatar/small/matt.jpg">
           Matt
         </div>
         <div class="item" data-value="justen" data-text="Justen">
-          <img class="ui mini avatar image" src="/images/avatar/small/justen.jpg">
           Justen Kitsune
         </div>
       </div>
@@ -559,6 +685,49 @@
   </div>
 </div>
 </div>
+
+<script src='/js/jquery.min.js'></script>
+<script src='/js/dropdown.min.js'></script>
+<script src='/js/transition.min.js'></script>
+<script src='/js/site.min.js'></script>
+<script src='/js/form.min.js'></script>
+<script src='/js/state.min.js'></script>
+<script src='/js/sidebar.min.js'></script>
+<script src='/js/visibility.min.js'></script>
+
+    <script >
+      $(document)
+    .ready(function() {
+      $('.ui.dropdown')
+        .dropdown()
+      ;
+      $('select.dropdown')
+        .dropdown()
+      ;
+
+      // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function() {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+          }
+        })
+      ;
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+    })
+  ;
+  //# sourceURL=pen.js
+  </script>
+
 {{template "body" .}}
 </body>
 </html>
