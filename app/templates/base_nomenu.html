@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Sample Semantic UI</title>
+  <title>{{ .title }}</title>
   
   
   
@@ -138,14 +138,14 @@
     window.parent.postMessage("resize", "*");
   }
 </script>
+<script src='/js/jquery.min.js'></script>
 
 </head>
 
 <body translate="no" >
 
-{{template "body" .}}
+{{template "body_nomenu" .}}
 
-<script src='/js/jquery.min.js'></script>
 <script src='/js/dropdown.min.js'></script>
 <script src='/js/transition.min.js'></script>
 <script src='/js/site.min.js'></script>
